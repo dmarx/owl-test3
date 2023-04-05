@@ -39,7 +39,7 @@ def generate_code_completion(
 
     completions = openai.ChatCompletion.create(
         messages=[
-            {"role": "system", "content": DEFAULT_SYSTEM_PROMPT.format(preferred_coding_language=)},
+            {"role": "system", "content": DEFAULT_SYSTEM_PROMPT.format(preferred_coding_language=preferred_coding_language)},
             {"role": "user", "content": DEFAULT_USER_TEMPLATE.format(text=prompt)},
         ], **kargs)
     return completions.choices[0]['message']['content'].strip()
