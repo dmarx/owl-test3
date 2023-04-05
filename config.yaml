@@ -5,6 +5,7 @@ prompt_extension: .llm_prompt
 
 # the default extension files will be written to
 target_extension: .py
+preferred_coding_language: python
 
 # Completion options for OpenAI API
 completion_options:
