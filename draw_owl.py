@@ -66,7 +66,7 @@ def process_file(
         return
     completed_code = generate_code_completion(
         prompt=prompt, 
-        preferred_coding_language=preferred_coding_language,
+        preferred_coding_language=config.preferred_coding_language,
         **completion_kargs)
     print(completed_code)
     target_file = os.path.splitext(file_path)[0] + target_extension
